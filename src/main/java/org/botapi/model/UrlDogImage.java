@@ -3,23 +3,19 @@ package org.botapi.model;
 import com.google.gson.annotations.SerializedName;
 import org.jetbrains.annotations.NotNull;
 
-public class UrlCatImage implements Comparable<UrlCatImage>{
+public class UrlDogImage implements Comparable<UrlDogImage> {
 
-    private String id;
+    @SerializedName("message")
+    private String dogUrl;
 
-    @SerializedName("url")
-    private String catUrl;
 
     @Override
     public String toString() {
-        return catUrl;
+        return dogUrl;
     }
 
     @Override
-    public int compareTo(@NotNull UrlCatImage o) {
+    public int compareTo(@NotNull UrlDogImage o) {
         return 0;
     }
-
-
-
 }
