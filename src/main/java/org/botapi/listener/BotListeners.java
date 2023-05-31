@@ -11,26 +11,23 @@ public class BotListeners extends ListenerAdapter {
     @Override
     public void onMessageReceived(@NotNull MessageReceivedEvent event) {
         CatsService catsService = new CatsService();
-        System.out.println(event.getMessage().getContentRaw());
 
         try {
-            if ( !event.getAuthor().isBot() && event.isFromGuild())  {
-                String image = catsService.generateCatImage().toString();
-                event.getTextChannel().sendMessage(image).queue();
+            if (!event.getAuthor().isBot() && event.isFromGuild() && event.getMessage().getContentRaw().equalsIgnoreCase("!cat")) {
+                catsService.generateCatImage();
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
-        try{
-            if(!event.getAuthor().isBot() && event.getMessage().getContentRaw().equalsIgnoreCase("test")) {
+        try {
+            if (!event.getAuthor().isBot() && event.getMessage().getContentRaw().equalsIgnoreCase("!cat")) {
                 String image = catsService.generateCatImage().toString();
-                event.getPrivateChannel().sendMessage(image).queue();
+                event.getChannel().sendMessage(image).queue();
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+
     }
-
-
 }
