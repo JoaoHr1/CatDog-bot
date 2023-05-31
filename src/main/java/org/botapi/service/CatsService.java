@@ -1,7 +1,7 @@
-package org.example.service;
+package org.botapi.service;
 
 import com.google.gson.Gson;
-import org.example.model.UrlCatImage;
+import org.botapi.model.UrlCatImage;
 
 import java.net.URI;
 import java.net.http.HttpClient;

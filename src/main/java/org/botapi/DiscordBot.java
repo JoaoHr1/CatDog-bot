@@ -1,11 +1,11 @@
-package org.example;
+package org.botapi;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import org.example.listener.BotListeners;
+import org.botapi.listener.BotListeners;
 
 
 public class DiscordBot extends ListenerAdapter  {

@@ -1,9 +1,9 @@
-package org.example.listener;
+package org.botapi.listener;
 
 
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import org.example.service.CatsService;
+import org.botapi.service.CatsService;
 import org.jetbrains.annotations.NotNull;
 
 public class BotListeners extends ListenerAdapter {

@@ -1,4 +1,4 @@
-package org.example.model;
+package org.botapi.model;
 
 import com.google.gson.annotations.SerializedName;
 import org.jetbrains.annotations.NotNull;
