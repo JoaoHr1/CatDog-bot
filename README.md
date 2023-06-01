@@ -28,7 +28,7 @@ git clone https://github.com/JoaoHr1/CatDog-bot.git
 
 ---
 
-3- Create a .env file and put your discord developer api key
+3- Create a .env file and put your discord developer TOKEN, if you don't have it, generate one <a href="https://discord.com/developers/docs/intro">here</a>
 ```
 TOKEN=YOUR_TOKEN_HERE
 ```
