@@ -24,7 +24,7 @@ git clone https://github.com/JoaoHr1/CatDog-bot.git
 
 ---
 
-2- Make sure you have the JDK (java development kit) version 17.0.0+ and Maven installed on your machine and.
+2- Make sure you have the JDK (java development kit) version 17.0.0+ and Maven installed on your machine
 
 ---
 
