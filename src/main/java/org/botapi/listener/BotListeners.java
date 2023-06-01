@@ -21,7 +21,6 @@ public class BotListeners extends ListenerAdapter {
         try {
             if (compare && isCat) {
                 catsService.generateCatImage();
-                System.out.println(catsService.generateCatImage());
             } else if (compare && isDog)
                 dogsService.generateDogImage();
 
