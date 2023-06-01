@@ -8,7 +8,7 @@
 </details>
 
 
-<p> CatDog is a bot that allows THECATAPI and DOGCEOAPI to send cat or dog images using commands !cat or !dog, making the experience in discord chats cuter than ever</p>
+<p> CatDog is a bot that allows THECATAPI and DOGCEOAPI to send cat or dog images using commands !cat and !dog, making the experience in discord chats cuter than ever</p>
 
 If you want to put my bot on your community, just click <a href="https://discord.com/api/oauth2/authorize?client_id=1112261679326179388&permissions=311385208832&scope=bot">HERE</a>
 
