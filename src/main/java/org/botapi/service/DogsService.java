@@ -1,7 +1,7 @@
 package org.botapi.service;
 
 import com.google.gson.Gson;
-import org.botapi.model.UrlDogImage;
+import org.botapi.model.DogDTO;
 
 import java.io.IOException;
 import java.net.URI;
@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
 
 public class DogsService {
 
-    public UrlDogImage generateDogImage() throws IOException, InterruptedException {
+    public DogDTO generateDogImage() throws IOException, InterruptedException {
 
         String apiUrl = "https://dog.ceo/api/breeds/image/random";
 
@@ -22,6 +22,6 @@ public class DogsService {
         String json = response.body();
         Gson gson = new Gson();
 
-        return gson.fromJson(json, UrlDogImage.class);
+        return gson.fromJson(json, DogDTO.class);
     }
 }

@@ -1,7 +1,7 @@
 package org.botapi.service;
 
 import com.google.gson.Gson;
-import org.botapi.model.UrlCatImage;
+import org.botapi.model.CatDTO;
 
 import java.io.IOException;
 import java.net.URI;
@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
 
 public class CatsService {
 
-    public UrlCatImage generateCatImage() throws IOException, InterruptedException {
+    public CatDTO generateCatImage() throws IOException, InterruptedException {
 
         String apiUrl = "https://api.thecatapi.com/v1/images/search";
 
@@ -22,7 +22,7 @@ public class CatsService {
         String json = response.body().replace("[", "").replace("]", "");
         Gson gson = new Gson();
 
-        return gson.fromJson(json, UrlCatImage.class);
+        return gson.fromJson(json, CatDTO.class);
     }
 
 }

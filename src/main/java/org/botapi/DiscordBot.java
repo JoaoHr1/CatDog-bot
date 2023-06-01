@@ -9,15 +9,15 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 import org.botapi.listener.BotListeners;
 
 
-public class DiscordBot extends ListenerAdapter  {
-    public static void main(String[] args) throws Exception {
+public class DiscordBot extends ListenerAdapter {
+    public static void main(String[] args) throws InterruptedException {
 
         Dotenv dotenv = Dotenv.configure().load();
         String token = dotenv.get("TOKEN");
 
-        JDA bot = JDABuilder.createDefault (token).enableIntents(GatewayIntent.MESSAGE_CONTENT)
-                .setActivity(Activity.watching("Say !cat or !dog to a surprise! "))
-                .addEventListeners(new BotListeners()).build().awaitReady();
+        JDA bot = JDABuilder.createDefault(token).enableIntents(GatewayIntent.MESSAGE_CONTENT)
+                .setActivity(Activity.watching("Type !cat or !dog to a surprise!"))
+                .addEventListeners(new BotListeners()).build();
 
     }
 
