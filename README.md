@@ -1,5 +1,7 @@
 <h1>CATDOG-BOT</h1>
 
+---
+
 <details>
   <summary>Open for a surprise</summary>
   
@@ -7,6 +9,7 @@
   
 </details>
 
+---
 
 <p> CatDog is a bot that allows THECATAPI and DOGCEOAPI to send cat or dog images using commands !cat and !dog, making the experience in discord chats cuter than ever</p>
 
